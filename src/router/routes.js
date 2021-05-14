@@ -1,7 +1,7 @@
+
 const routes = [
   {
-    path: '/',
-    component: () => import('pages/SitioWeb.vue')
+    path: '/', component: () => import('pages/Index.vue') 
   },
 
   // Always leave this as last one,
