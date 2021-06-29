@@ -7,13 +7,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" href="images/favicon.ico" type="image/png" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<style>
+		 #collage{
+			height: auto;
+			max-width: 50%; 
+			margin-left: 5rem;
+		} 
+
+	</style>
 </head>
 
 <body>
 
 	<!-- Header -->
 	<header id="header">
-		<div class="logo"><a href="index.html"><span> <img src="images/doctoresvirtual.png" width="175"
+		<div class="logo"><a href="index.html"><span> <img class="animate__animated animate__pulse" src="images/doctoresvirtual.png" width="175"
 						alt="hola"></span></a></div>
 		<a href="#menu"><span>Menu</span></a>
 	</header>
@@ -34,10 +47,10 @@
 			to the full filename of your image. This is used in each section to set
 			the background image.
 		-->
-	<section id="banner" class="bg-img" data-bg="banner.jpg">
+	<section id="banner" class="bg-img animate__animated animate__pulse" data-bg="banner.jpg">
 		<div class="inner">
 			<header>
-				<h1>Salud para todos</h1>
+				<h1 class="animate__animated animate__pulse">Salud para todos</h1>
 			</header>
 		</div>
 		<a href="#one" class="more">Learn More</a>
@@ -48,21 +61,42 @@
 		<div class="inner">
 			<article class="box">
 				<header>
-					<h2>VirtualDoc Demo</h2>
-					<p>DSI2021</p>
+					<p class="animate__animated animate__pulse" style="font-size: 2rem; color: white;">VirtualDoc App Demo</p>
+					<p style="font-size: 1.5rem; color: white;">DSI2021</p>
 				</header>
 				<div class="content">
-					<h1>VirtualDoc en la version Demo te permite 
+					<p style="color: white;">VirtualDoc App en la version Demo te permite 
 						ver algunas de las funciones de la aplicacion completa sin necesidad
 						de registrarte, pero siempre con la potencia que esta posee para 
 						suplir todas las necesidad que un Doctor tenga.
-					</h1>
-					<img src="images/login.png" width="350" alt="">
+					</p>
+					<div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+						  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+						  <div class="carousel-item active" data-bs-interval="4000">
+							<img src="images/expedienteMedico.png" class="d-block w-100" alt="...">
+							
+						  </div>
+						  <div class="carousel-item" data-bs-interval="4000">
+							<img src="images/addNewPacient.png" class="d-block w-100" alt="...">
+						  </div>
+						  <div class="carousel-item" data-bs-interval="4000">
+							<img src="images/principalScreen.png" class="d-block w-100" alt="...">
+						  </div>
+						</div>
+					  </div>
+					<!-- <img src="images/login.png" width="350" alt=""> -->
+					
 				</div>
 				<footer>
-					<a href="index.html" class="button alt">Visitar Nuestra Demo App</a>
+					<a class="btn btn-outline-primary mt-4" href="https://virtualdoc.netlify.app">VirtualDoc App Demo</a>
+					<!-- <p style="font-size: 1.5rem; text-align: center;"><a href="https://virtualdoc.netlify.app">VirtualDoc App Demo</a></p> -->
 					<hr>
-					<h4>Continua abajo para poder probar la aplicacion completa</h4>
+					<p style="color: white;">Continua abajo para poder probar la aplicacion completa</p>
 					<br>
 					 <i class="fas fa-arrow-down">
 						
@@ -79,25 +113,46 @@
 			<div class="inner">
 				<article class="box">
 					<header>
-						<h2>VirtualDoc</h2>
-						<p>DSI2021</p>
+						<p style="font-size: 1.5rem; color: white;">VirtualDoc App</p>
+						<p style="font-size: 1rem; color: white;">DSI2021</p>
 					</header>
 					<div class="content">
-						<h1>VirtualDoc es un proyecto que traza una ayuda en el manejo y control de pacientes para muchos
+						<p style="color: white;"> VirtualDoc App es un proyecto que traza una ayuda en el manejo y control de pacientes para muchos
 							doctores y ambientes de servicio médico.
 							Los clientes de este proyecto procuran de este proyecto una ayuda en el registro de pacientes,
 							consultas, acceso a la información médica que deben disponer de sus pacientes como medicamentos,
 							enfermedades tratadas anteriormente o actuales y además tener un fácil acceso a estos a través
 							de la web y de app móvil.
-						</h1>
-						<img src="images/sistema2.png" width="250" alt="">
+						</p>
+						<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-indicators">
+							  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							</div>
+							<div class="carousel-inner">
+							  <div class="carousel-item active" data-bs-interval="4000">
+								<img src="images/principalscreen2.png" class="d-block w-100" alt="...">
+								
+							  </div>
+							  <div class="carousel-item" data-bs-interval="4000">
+								<img src="images/addNewPacient.png" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item" data-bs-interval="4000">
+								<img src="images/expedienteMedico.png" class="d-block w-100" alt="...">
+							  </div>
+							</div>
+						  </div>
+						<!-- <img src="images/sistema2.png" width="225" alt=""> -->
 					</div>
 					<footer>
-						<a href="index.html" class="button alt">Visitar Nuestra App</a>
+						<a class="btn btn-outline-primary mt-4" href="https://virtualdoc.netlify.app">VirtualDoc App</a>
+
+						<!-- <p style="font-size: 1.5rem; text-align: center;"><a href="https://virtualdoc.netlify.app" class="">VirtualDoc App</a></p> -->
 						<hr>
-						<h4>Tambien puedes descargar un ejecutable para moviles en android
+						<p style="color: white;">Tambien puedes descargar un ejecutable para moviles en android
 							llamada <strong> "APK" </strong>
-						</h4>
+						</p>
 						<br>
 						 <i class="fas fa-arrow-down">
 							
@@ -113,21 +168,42 @@
 		<div class="inner">
 			<article class="box">
 				<header>
-					<h2>VirtualDoc APK</h2>
-					<p>DSI2021</p>
+					<p style="font-size: 1.5rem; color: white;">VirtualDoc Google Play</p>
+						<p style="font-size: 1rem; color: white;">DSI2021</p>
 				</header>
 				<div class="content">
-					<h1>VirtualDoc en la version APK te permite utilizar 
+					<p style="color: white;">VirtualDoc Google Play en la version APK te permite utilizar 
 						la App desde la comodidad de tu telefono celular o tablet
 						para que este disponible en cualquier momento que esta sea necesaria
 						desde la facilidad del hogar, calles o aun de vacaciones
-					</h1>
-					<img src="images/sistema1.png" width="750" alt="">
+					</p>
+					<div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+						  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="4000">
+							  <img src="images/expedienteMedico.png" class="d-block w-100" alt="...">
+							  
+							</div>
+							<div class="carousel-item" data-bs-interval="4000">
+							  <img src="images/addNewPacient.png" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-bs-interval="4000">
+							  <img src="images/principalscreen2.png" class="d-block w-100" alt="...">
+							</div>
+						  </div>
+					  </div>
+					<!-- <img src="images/sistema1.png" width="750" alt=""> -->
 				</div>
 				<footer>
-					<a href="index.html" class="button alt">Visitar Nuestro Sitio de descarga</a>
+					<a class="btn btn-outline-primary mt-4" href="https://virtualdoc.netlify.app">VirtualDoc Google Play</a>
+
+					<!-- <p style="font-size: 1.5rem; text-align: center;"><a href="https://virtualdoc.netlify.app" class="">VirtualDoc Google Play</a></p> -->
 					<hr>
-					<h4>Continua abajo para poder leer información de salud</h4>
+					<p style="color: white;">Continua abajo para poder leer información de salud</p>
 					<br>
 					 <i class="fas fa-arrow-down">
 						
@@ -141,30 +217,31 @@
 		<div class="inner">
 			<article class="box">
 				<header>
-					<h2>Acerca de Salud</h2>
+					<p style="color: white;">Acerca de Salud</p>
 				</header>
 				<div class="content">
-					<h1>
+					<p>
 						<hr>
-						<i class="fas fa-apple-alt"> Temas de Salud </i>
+						<i class="fas fa-apple-alt" style="color: white;"> Temas de Salud </i>
 						<br>
 
-						<h5>Infórmese sobre temas de salud, bienestar, enfermedades y condiciones</h5>
+						<p style="color: white;">Infórmese sobre temas de salud, bienestar, enfermedades y condiciones</p>
 						<hr>
-						<i class="fas fa-pills"> Medicina y Suplementos</i>
+						<i class="fas fa-pills" style="color: white;"> Medicina y Suplementos</i>
 						<br>
 
-						<h5>Aprenda sobre sus medicamentos de receta, de venta libre, hierbas y suplementos</h5>
+						<p style="color: white;">Aprenda sobre sus medicamentos de receta, de venta libre, hierbas y suplementos</p>
 						<hr>
-						<i class="fas fa-stethoscope"> Pruebas Medicas </i>
+						<i class="fas fa-stethoscope" style="color: white;"> Pruebas Medicas </i>
 						<br>
-						<h5>Entérese por qué su medico le pidió unas ciertas pruebas médicas y lo que pueden significar
-							sus resultados</h5>
+						<p style="color: white;">Entérese por qué su medico le pidió unas ciertas pruebas médicas y lo que pueden significar
+							sus resultados</p>
 						<hr>
-					</h1>
+						</p>
 				</div>
 				<footer>
-					<a href="https://medlineplus.gov/spanish/" class="button alt">Continuar Aprendiendo</a>
+					<p style="font-size: 1.5rem; text-align: center;"><a href="https://medlineplus.gov/spanish/">Continuar Aprendiendo</a></p>
+
 				</footer>
 			</article>
 		</div>
@@ -183,20 +260,18 @@
 				<label for="name">
 
 					<br>
-					<h1><strong>SOBRE NOSOTROS:</strong></h1>
+					<h4><strong>SOBRE NOSOTROS:</strong></h4>
 
-					<h5> Somos un grupo de desarrolladores de la facultad Multidisciplinaria de Occidente
-					</h5>
+					<h6> Somos un grupo de desarrolladores de la facultad Multidisciplinaria de Occidente
+					</h6>
+					<!-- <a href="nosotros.html"><img src="images/collage.jpg" style="max-width: 50%; margin-left: 5rem;"></a> -->
+				<a href="nosotros.html"><img src="images/collage.jpg" id="collage"></a>
 				</label>
 				<hr>
 
 			</div>
 			<div class="field half">
-				<label for="email">
-					<br>
-					<h1><strong>Contactenos:</strong></h1>
-
-				</label>
+				
 				<ul class="icons">
 					<li><a href="" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="https://www.facebook.com/alexander.calderon.900" class="icon round fa-facebook"><span
@@ -204,19 +279,19 @@
 					<li><a href="https://www.instagram.com/fmocc_ues/?hl=es" class="icon round fa-instagram"><span
 								class="label">Instagram</span></a></li>
 				</ul>
-				<h1>
+				<h6>
 					<i class="fas fa-envelope">
 						sistemasuessv@gmail.com
 						envianos tus sugerencias!
 					</i>
 
-				</h1>
+				</h6>
 
 			</div>
 			<div class="field">
 				<label for="message">
 					<br>
-					<h1><strong>Tecnologias Utilizadas:</strong></h1>
+					<h6><strong>Tecnologias Utilizadas:</strong></h6>
 					<hr>
 					<a href="https://vuejs.org/"><img src="images/1200px-Vue.js_Logo_2.svg.png" width="50"
 							alt="">Vuejs</a>
@@ -245,6 +320,7 @@
 	</footer>
 
 	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
